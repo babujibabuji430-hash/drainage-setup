@@ -1,0 +1,1159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DrainageFix — Find the Right Solution for Every Drainage Problem</title>
+  <meta name="description" content="Report overflowing drains, road waterlogging, and find local drainage maintenance and cleaning providers across India.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Civic Transparency Banner -->
+  <aside class="civic-alert-top" role="region" aria-label="Demo Disclaimer">
+    <div class="container civic-alert-content">
+      <span class="civic-badge">DEMO APPLICATION</span>
+      <p>
+        <strong>Notice:</strong> DrainageFix is an educational demonstration project. Listings, prices, and statuses are sample data. Submitting a report does not notify a municipality or real contractor. Contact details must be independently verified.
+      </p>
+    </div>
+  </aside>
+
+  <!-- Main Navigation Header -->
+  <header class="site-header" id="header">
+    <div class="container header-container">
+      <a href="#hero" class="brand-logo" aria-label="DrainageFix Homepage">
+        <!-- Water Droplet + Drainage Pipe Inline SVG Logo -->
+        <svg class="brand-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="24" cy="24" r="22" fill="#0A2540" />
+          <!-- Drainage Pipe Outline -->
+          <path d="M12 28H18C20 28 22 30 22 32V38H26V32C26 30 28 28 30 28H36" stroke="#00B4D8" stroke-width="3" stroke-linecap="round"/>
+          <path d="M10 26V30M38 26V30" stroke="#00B4D8" stroke-width="3" stroke-linecap="round"/>
+          <rect x="20" y="36" width="8" height="4" rx="2" fill="#38BDF8"/>
+          <!-- Droplet falling into pipe -->
+          <path d="M24 8C24 8 16 17 16 21C16 25.4183 19.5817 29 24 29C28.4183 29 32 25.4183 32 21C32 17 24 8 24 8Z" fill="url(#dropletGradient)"/>
+          <!-- Water ripple -->
+          <path d="M20 22C20 20 22 18 24 18" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+          <defs>
+            <linearGradient id="dropletGradient" x1="16" y1="8" x2="32" y2="29" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#38BDF8"/>
+              <stop offset="1" stop-color="#0284C7"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <div class="brand-text">
+          <span class="brand-title">Drainage<span class="text-aqua">Fix</span></span>
+          <span class="brand-tagline">Report It. Fix It. Prevent Waterlogging.</span>
+        </div>
+      </a>
+
+      <!-- Desktop & Tablet Navigation -->
+      <nav class="nav-menu" id="navMenu" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#report-section" class="nav-link">Report Problem</a></li>
+          <li><a href="#matching-section" class="nav-link">Smart Matcher</a></li>
+          <li><a href="#companies-section" class="nav-link">Find Companies</a></li>
+          <li><a href="#dashboard-section" class="nav-link">My Reports <span class="nav-count-badge" id="navReportsCount">0</span></a></li>
+          <li><a href="#safety-section" class="nav-link">Safety & Prevention</a></li>
+        </ul>
+        <div class="nav-cta-wrap">
+          <a href="#report-section" class="btn btn-primary btn-sm">Report Issue Now</a>
+        </div>
+      </nav>
+
+      <!-- Mobile Menu Toggle Button -->
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="menu-bar"></span>
+        <span class="menu-bar"></span>
+        <span class="menu-bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-chip">
+            <svg class="hero-chip-icon" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1.323l3.954 1.582 1.599-.8a1 1 0 01.894 1.79l-1.233.616 1.738 5.42a1 1 0 01-.285 1.05A3.989 3.989 0 0115 15a3.989 3.989 0 01-2.667-1.019 1 1 0 01-.285-1.05l1.715-5.349L11 6.477V16h2a1 1 0 110 2H7a1 1 0 110-2h2V6.477L6.237 7.582l1.715 5.349a1 1 0 01-.285 1.05A3.989 3.989 0 015 15a3.989 3.989 0 01-2.667-1.019 1 1 0 01-.285-1.05l1.738-5.42-1.233-.617a1 1 0 01.894-1.788l1.599.799L9 4.323V3a1 1 0 011-1z" clip-rule="evenodd" />
+            </svg>
+            Civic Drainage Assistance Platform &bull; All 36 Indian States &amp; UTs
+          </div>
+          <h1 class="hero-title">Rain Stopped, But Water Is Still Flowing?</h1>
+          <p class="hero-subtitle">
+            Find drainage solutions, report overflowing drains, and connect with suitable service providers in your area. Log post-monsoon issues in seconds and discover verified safety tips.
+          </p>
+          <div class="hero-actions">
+            <a href="#report-section" class="btn btn-primary btn-lg">
+              <svg class="btn-icon" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clip-rule="evenodd" />
+              </svg>
+              Report a Drainage Problem
+            </a>
+            <a href="#companies-section" class="btn btn-secondary btn-lg">
+              <svg class="btn-icon" viewBox="0 0 20 20" fill="currentColor">
+                <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z" />
+              </svg>
+              Find Drainage Companies
+            </a>
+            <a href="#safety-section" class="btn btn-outline btn-lg">
+              <svg class="btn-icon" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+              </svg>
+              Explore Prevention Tips
+            </a>
+          </div>
+
+          <div class="hero-quick-stats">
+            <div class="stat-pill">
+              <span class="stat-number">1,480+</span>
+              <span class="stat-label">Sample Reports Logged (Demo)</span>
+            </div>
+            <div class="stat-pill">
+              <span class="stat-number">85+</span>
+              <span class="stat-label">Sample Listed Providers</span>
+            </div>
+            <div class="stat-pill">
+              <span class="stat-number">36</span>
+              <span class="stat-label">Indian States &amp; UTs Supported</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-card-preview">
+            <div class="card-preview-header">
+              <span class="status-indicator live-demo">Demo Active</span>
+              <span class="card-preview-tag">Civic Alert Hub</span>
+            </div>
+            <div class="hero-scenario-box">
+              <div class="scenario-icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+                  <path d="M12 5 9.04 11l6 1-4.04 6"/>
+                </svg>
+              </div>
+              <div class="scenario-details">
+                <h4>Post-Monsoon Waterlogging?</h4>
+                <p>When stormwater systems choke with silt &amp; polythene, water surges into basements, lanes, and entranceways.</p>
+              </div>
+            </div>
+
+            <!-- Quick Rule Match Simulator Widget inside Hero -->
+            <div class="hero-mini-match">
+              <label for="heroProblemSelect" class="form-label-sm">Quick Service Recommendation:</label>
+              <div class="mini-match-row">
+                <select id="heroProblemSelect" class="form-select-sm" aria-label="Select common drainage issue">
+                  <option value="overflow">Overflowing drainage after rain</option>
+                  <option value="blocked">Blocked drainage pipe</option>
+                  <option value="waterlog">Road waterlogging &amp; pooling</option>
+                  <option value="sewage">Sewage water coming outside</option>
+                  <option value="stagnant">Stagnant water near houses</option>
+                </select>
+                <button type="button" id="heroMatchBtn" class="btn btn-aqua btn-sm">Find Match</button>
+              </div>
+              <div id="heroMatchResult" class="hero-match-output" aria-live="polite">
+                <span class="recommend-tag">Recommended:</span> Stormwater Drain Maintenance &amp; High-Volume Pumping
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: COMMON POST-MONSOON PROBLEMS (Visual Feature) -->
+    <section class="section section-problems" id="common-problems">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Recognize The Hazard</span>
+          <h2 class="section-title">Common Drainage Problems After Rainfall</h2>
+          <p class="section-desc">
+            Heavy monsoon downpours quickly expose blocked civil culverts, damaged gully traps, and overwhelmed residential pipes. Recognize what is happening in your street.
+          </p>
+        </div>
+
+        <div class="problems-grid">
+          <!-- Card 1 -->
+          <article class="problem-card">
+            <div class="problem-icon-banner icon-overflow">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                <path d="M4 14l3-3 3 3"/>
+              </svg>
+            </div>
+            <div class="problem-card-body">
+              <span class="problem-badge badge-high">High Frequency</span>
+              <h3 class="problem-name">Road Waterlogging</h3>
+              <p>Water accumulates along street curbs and junctions due to clogged intake grates and inadequate road slope runoff.</p>
+              <ul class="problem-bullets">
+                <li>Traps two-wheelers and pedestrians</li>
+                <li>Breeds disease vectors within 48 hours</li>
+                <li>Damages asphalt and pavement foundations</li>
+              </ul>
+              <a href="#report-section" class="problem-link" data-problem="Road waterlogging">Report This Issue &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="problem-card">
+            <div class="problem-icon-banner icon-sewage">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+                <line x1="12" y1="9" x2="12" y2="13"/>
+                <line x1="12" y1="17" x2="12.01" y2="17"/>
+              </svg>
+            </div>
+            <div class="problem-card-body">
+              <span class="problem-badge badge-emergency">Biohazard Emergency</span>
+              <h3 class="problem-name">Sewage Water Overflow</h3>
+              <p>Combined sewage lines back up through inspection chambers into front yards and ground-floor residential drains.</p>
+              <ul class="problem-bullets">
+                <li>Severe microbial contamination risk</li>
+                <li>Foul hydrogen sulfide gas release</li>
+                <li>Requires urgent vacuum desilting</li>
+              </ul>
+              <a href="#report-section" class="problem-link" data-problem="Sewage water coming outside">Report This Issue &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="problem-card">
+            <div class="problem-icon-banner icon-blocked">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/>
+              </svg>
+            </div>
+            <div class="problem-card-body">
+              <span class="problem-badge badge-medium">Building Hazard</span>
+              <h3 class="problem-name">Blocked Drainage Pipe</h3>
+              <p>Tree roots, solid household debris, silt, and hardened fat/oil solidify inside private compound outlet lines.</p>
+              <ul class="problem-bullets">
+                <li>Causes backflow into kitchen and bathroom traps</li>
+                <li>Generates structural dampness in exterior walls</li>
+                <li>Needs hydro-jetting or mechanical snake cabling</li>
+              </ul>
+              <a href="#report-section" class="problem-link" data-problem="Blocked drainage pipe">Report This Issue &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="problem-card">
+            <div class="problem-icon-banner icon-cover">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                <line x1="9" y1="3" x2="9" y2="21"/>
+                <line x1="15" y1="3" x2="15" y2="21"/>
+                <line x1="3" y1="9" x2="21" y2="9"/>
+                <line x1="3" y1="15" x2="21" y2="15"/>
+              </svg>
+            </div>
+            <div class="problem-card-body">
+              <span class="problem-badge badge-emergency">Accident Risk</span>
+              <h3 class="problem-name">Damaged Drain Covers</h3>
+              <p>Broken cast iron slabs or missing concrete covers hidden under dark rainwater create life-threatening sinkholes.</p>
+              <ul class="problem-bullets">
+                <li>Immediate danger of falls for children and cyclists</li>
+                <li>Requires temporary barricading &amp; prompt replacement</li>
+                <li>Allows large debris to collapse into drain channels</li>
+              </ul>
+              <a href="#report-section" class="problem-link" data-problem="Damaged drainage cover">Report This Issue &rarr;</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: SMART MATCHER TOOL -->
+    <section class="section section-matcher bg-light" id="matching-section">
+      <div class="container">
+        <div class="matcher-box">
+          <div class="matcher-header text-center">
+            <span class="section-tag">Rule-Based Solution Engine</span>
+            <h2 class="section-title">Smart Problem-to-Service Matching</h2>
+            <p class="section-desc">
+              Not sure which specialist to hire? Select your exact situation and state to discover the recommended service category and relevant sample providers instantly.
+            </p>
+          </div>
+
+          <div class="matcher-form-card">
+            <form id="matcherForm" class="matcher-controls">
+              <div class="form-group">
+                <label for="matchProblemSelect" class="form-label">What drainage issue are you experiencing? <span class="required">*</span></label>
+                <select id="matchProblemSelect" class="form-control" required>
+                  <option value="">-- Choose your current problem --</option>
+                  <option value="Overflowing drainage after rain">Overflowing drainage after rain</option>
+                  <option value="Blocked drainage pipe">Blocked drainage pipe</option>
+                  <option value="Road waterlogging">Road waterlogging &amp; ponding</option>
+                  <option value="Sewage water coming outside">Sewage water coming outside</option>
+                  <option value="Stagnant water near houses">Stagnant water near houses</option>
+                  <option value="Damaged drainage cover">Damaged drainage cover / broken manhole</option>
+                  <option value="Damaged underground drainage">Damaged underground drainage</option>
+                  <option value="Other drainage problems">Other drainage problems</option>
+                </select>
+              </div>
+
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label for="matchStateSelect" class="form-label">State / Union Territory</label>
+                  <select id="matchStateSelect" class="form-control">
+                    <option value="">All States &amp; UTs (India)</option>
+                    <!-- Dynamically populated via JS with all 36 States/UTs -->
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="matchCityInput" class="form-label">City or Town (Optional)</label>
+                  <input type="text" id="matchCityInput" class="form-control" placeholder="e.g. Bengaluru, Delhi, Pune, Kolkata">
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block">
+                Analyze Issue &amp; Show Matching Providers
+              </button>
+            </form>
+
+            <!-- Results Display Area -->
+            <div id="matcherResultCard" class="matcher-result-panel hidden" aria-live="polite">
+              <div class="matcher-result-header">
+                <div class="result-badge-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                    <polyline points="22 4 12 14.01 9 11.01"/>
+                  </svg>
+                </div>
+                <div>
+                  <span class="result-small-title">Analysis Result</span>
+                  <h3 id="matchCategoryTitle" class="result-category-heading">Stormwater Drain Maintenance</h3>
+                </div>
+              </div>
+
+              <div class="matcher-result-body">
+                <p id="matchExplanation" class="result-explanation-text">
+                  Based on your reported problem, the primary requirement is clearing choked municipal runoff lines, removing sediment blockages, and installing silt catchers.
+                </p>
+                <div class="matcher-spec-badges" id="matchBadgesContainer">
+                  <!-- Injected tags -->
+                </div>
+                <div class="matcher-action-row">
+                  <button type="button" id="matchScrollToCompaniesBtn" class="btn btn-aqua">
+                    View Relevant Demo Companies (<span id="matchedCompanyCount">0</span>)
+                  </button>
+                  <button type="button" id="matchPreFillReportBtn" class="btn btn-outline">
+                    Log A Report With This Issue
+                  </button>
+                </div>
+              </div>
+              <p class="matcher-disclaimer">
+                Note: This recommendation is generated algorithmically for demonstration. DrainageFix does not verify contractor credentials or guarantee issue resolution.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: REPORT FORM -->
+    <section class="section section-report" id="report-section">
+      <div class="container">
+        <div class="report-wrapper">
+          <div class="report-intro">
+            <span class="section-tag">Civic Reporting Desk</span>
+            <h2 class="section-title">Report a Drainage Problem</h2>
+            <p class="section-desc">
+              Log an overflowing drain, road ponding, or sewage spill in your neighbourhood. All records are stored locally in your browser for demonstration, enabling you to practice civic documentation safely.
+            </p>
+
+            <div class="report-feature-card">
+              <div class="feature-item">
+                <div class="f-icon">&#x2714;</div>
+                <div>
+                  <h4>No Login Required</h4>
+                  <p>Submit reports instantly without creating an account or sharing passwords.</p>
+                </div>
+              </div>
+              <div class="feature-item">
+                <div class="f-icon">&#x1F512;</div>
+                <div>
+                  <h4>Stored in Local Browser</h4>
+                  <p>Data stays entirely within your browser's private localStorage. Never sold or broadcast.</p>
+                </div>
+              </div>
+              <div class="feature-item">
+                <div class="f-icon">&#x1F4CB;</div>
+                <div>
+                  <h4>Demo Tracking ID</h4>
+                  <p>Each submission receives an auto-generated unique tracking reference code.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Urgent Safety Reminder Box -->
+            <div class="safety-quick-warning">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+                <line x1="12" y1="9" x2="12" y2="13"/>
+                <line x1="12" y1="17" x2="12.01" y2="17"/>
+              </svg>
+              <div>
+                <strong>Immediate Danger?</strong> If floodwaters submerge electrical transformers, open deep manholes, or enter electrical switchboards, call National Emergency Service <strong>112</strong> or your local disaster management cell immediately.
+              </div>
+            </div>
+          </div>
+
+          <!-- Form Element -->
+          <div class="report-form-container">
+            <form id="drainageReportForm" class="drainage-form" novalidate>
+              <div class="form-header-badge">
+                <span>Local Demo Form &bull; No Public Broadcast</span>
+              </div>
+
+              <!-- Problem Type Selection -->
+              <div class="form-group">
+                <label for="reportProblemType" class="form-label">
+                  Problem Type <span class="required">*</span>
+                </label>
+                <select id="reportProblemType" class="form-control" required>
+                  <option value="">-- Select drainage problem type --</option>
+                  <option value="Overflowing drainage after rain">Overflowing drainage after rain</option>
+                  <option value="Blocked drainage pipe">Blocked drainage pipe</option>
+                  <option value="Road waterlogging">Road waterlogging</option>
+                  <option value="Sewage water coming outside">Sewage water coming outside</option>
+                  <option value="Stagnant water near houses">Stagnant water near houses</option>
+                  <option value="Damaged drainage cover">Damaged drainage cover</option>
+                  <option value="Damaged underground drainage">Damaged underground drainage</option>
+                  <option value="Other drainage problems">Other drainage problems</option>
+                </select>
+                <div class="field-error" id="err-reportProblemType">Please choose a problem type.</div>
+              </div>
+
+              <!-- Location Row: State & City -->
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label for="reportState" class="form-label">
+                    State / Union Territory <span class="required">*</span>
+                  </label>
+                  <select id="reportState" class="form-control" required>
+                    <option value="">-- Select State or UT --</option>
+                    <!-- Populated dynamically with all 36 Indian States & UTs -->
+                  </select>
+                  <div class="field-error" id="err-reportState">Please select an Indian state or UT.</div>
+                </div>
+
+                <div class="form-group">
+                  <label for="reportCity" class="form-label">
+                    City / Town / District <span class="required">*</span>
+                  </label>
+                  <input type="text" id="reportCity" class="form-control" placeholder="e.g. Pune, Delhi, Kochi, Jaipur" required>
+                  <div class="field-error" id="err-reportCity">Please specify your city or town.</div>
+                </div>
+              </div>
+
+              <!-- Locality / Street -->
+              <div class="form-group">
+                <label for="reportLocality" class="form-label">
+                  Area / Locality / Street Address <span class="required">*</span>
+                </label>
+                <input type="text" id="reportLocality" class="form-control" placeholder="e.g. 4th Cross, Gandhi Nagar, Near Primary Health Centre" required>
+                <div class="field-error" id="err-reportLocality">Please provide your area or landmark.</div>
+              </div>
+
+              <!-- Severity Level (Radio Buttons with visual chips) -->
+              <div class="form-group">
+                <label class="form-label">
+                  Severity Level <span class="required">*</span>
+                </label>
+                <div class="severity-selector-grid" role="radiogroup" aria-labelledby="severity-label">
+                  <label class="severity-chip severity-low">
+                    <input type="radio" name="severity" value="Low" required>
+                    <span class="chip-inner">
+                      <span class="chip-dot"></span>
+                      <span class="chip-title">Low</span>
+                      <span class="chip-sub">Slow drain, minor wetness</span>
+                    </span>
+                  </label>
+
+                  <label class="severity-chip severity-medium">
+                    <input type="radio" name="severity" value="Medium">
+                    <span class="chip-inner">
+                      <span class="chip-dot"></span>
+                      <span class="chip-title">Medium</span>
+                      <span class="chip-sub">Ankle-deep, lane restricted</span>
+                    </span>
+                  </label>
+
+                  <label class="severity-chip severity-high">
+                    <input type="radio" name="severity" value="High" checked>
+                    <span class="chip-inner">
+                      <span class="chip-dot"></span>
+                      <span class="chip-title">High</span>
+                      <span class="chip-sub">Water entering compounds</span>
+                    </span>
+                  </label>
+
+                  <label class="severity-chip severity-emergency">
+                    <input type="radio" name="severity" value="Emergency">
+                    <span class="chip-inner">
+                      <span class="chip-dot"></span>
+                      <span class="chip-title">Emergency</span>
+                      <span class="chip-sub">Inside rooms, electrical risk</span>
+                    </span>
+                  </label>
+                </div>
+                <div class="field-error" id="err-severity">Please select a severity level.</div>
+              </div>
+
+              <!-- When the issue started -->
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label for="reportTimeStarted" class="form-label">
+                    When did the issue start? <span class="required">*</span>
+                  </label>
+                  <select id="reportTimeStarted" class="form-control" required>
+                    <option value="">-- Select timeframe --</option>
+                    <option value="Just now (Within 1 hour)">Just now (Within 1 hour)</option>
+                    <option value="2-4 hours ago">2-4 hours ago</option>
+                    <option value="Earlier today after rain">Earlier today after rain</option>
+                    <option value="Yesterday">Yesterday</option>
+                    <option value="2 to 3 days ago">2 to 3 days ago</option>
+                    <option value="Ongoing for over a week">Ongoing for over a week</option>
+                  </select>
+                  <div class="field-error" id="err-reportTimeStarted">Please specify when the issue started.</div>
+                </div>
+
+                <div class="form-group">
+                  <label for="reportFullName" class="form-label">
+                    Your Name <span class="text-muted">(Optional)</span>
+                  </label>
+                  <input type="text" id="reportFullName" class="form-control" placeholder="e.g. Ramesh Kumar">
+                </div>
+              </div>
+
+              <!-- Contact & Photo Row -->
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label for="reportPhone" class="form-label">
+                    Contact Number <span class="text-muted">(Optional)</span>
+                  </label>
+                  <input type="tel" id="reportPhone" class="form-control" placeholder="10-digit mobile number" pattern="[0-9]{10}">
+                  <small class="form-hint">Stored strictly in local browser. Never uploaded.</small>
+                </div>
+
+                <div class="form-group">
+                  <label for="reportPhotoInput" class="form-label">
+                    Upload Photo <span class="text-muted">(Optional preview)</span>
+                  </label>
+                  <input type="file" id="reportPhotoInput" class="form-control-file" accept="image/*">
+                  <small class="form-hint">Max file size 2MB (converted to local preview).</small>
+                </div>
+              </div>
+
+              <!-- Photo Preview Container -->
+              <div id="photoPreviewContainer" class="photo-preview-wrap hidden">
+                <div class="preview-card">
+                  <img id="photoPreviewImg" src="" alt="Uploaded drainage problem preview">
+                  <button type="button" id="removePhotoBtn" class="btn-remove-photo" title="Remove photo">&times;</button>
+                </div>
+                <span class="preview-caption">Photo will be saved in your local demo report.</span>
+              </div>
+
+              <!-- Issue Description -->
+              <div class="form-group">
+                <label for="reportDescription" class="form-label">
+                  Description of Issue <span class="required">*</span>
+                </label>
+                <textarea id="reportDescription" class="form-control" rows="4" placeholder="Describe what happened: water height, smell, color, blocked manholes, whether pedestrians can pass, any damage caused..." required></textarea>
+                <div class="field-error" id="err-reportDescription">Please describe the drainage issue (at least 15 characters).</div>
+              </div>
+
+              <!-- Privacy Notice statement inside form -->
+              <div class="form-privacy-note">
+                <p>
+                  <strong>Notice:</strong> Submitting this report saves data only into your current browser's <code>localStorage</code>. No municipality, government agency, or contractor receives this information.
+                </p>
+              </div>
+
+              <div class="form-actions">
+                <button type="submit" id="submitReportBtn" class="btn btn-primary btn-lg btn-block">
+                  Submit Report (Save to Demo Dashboard)
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: FIND DRAINAGE COMPANIES -->
+    <section class="section section-companies" id="companies-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Sample Service Directory</span>
+          <h2 class="section-title">Find Drainage Companies &amp; Contractors</h2>
+          <p class="section-desc">
+            Explore sample drainage contractors, dewatering operators, and sewer cleaning specialists. Filter by your state, city, budget, or service need.
+          </p>
+          <div class="directory-disclaimer-pill">
+            <span>&#9888;&#65039; Demo Listings — Verify Credentials &amp; Estimates Independently Before Hiring</span>
+          </div>
+        </div>
+
+        <!-- Filter & Search Toolbar -->
+        <div class="company-filter-bar">
+          <div class="filter-top-row">
+            <div class="search-input-wrap">
+              <svg class="search-icon" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+              </svg>
+              <input type="text" id="companySearchInput" class="search-input" placeholder="Search company name, equipment, or service..." aria-label="Search companies">
+            </div>
+
+            <div class="filter-actions">
+              <button type="button" id="resetFiltersBtn" class="btn btn-outline btn-sm">Reset Filters</button>
+            </div>
+          </div>
+
+          <div class="filter-dropdowns-grid">
+            <!-- Filter: State -->
+            <div class="filter-group">
+              <label for="filterState" class="filter-label">Filter by State/UT:</label>
+              <select id="filterState" class="filter-select">
+                <option value="">All States &amp; UTs</option>
+                <!-- Populated dynamically with all 36 States/UTs -->
+              </select>
+            </div>
+
+            <!-- Filter: City -->
+            <div class="filter-group">
+              <label for="filterCity" class="filter-label">Filter by City:</label>
+              <select id="filterCity" class="filter-select">
+                <option value="">All Cities</option>
+                <!-- Dynamically populated based on available company cities -->
+              </select>
+            </div>
+
+            <!-- Filter: Service Category -->
+            <div class="filter-group">
+              <label for="filterCategory" class="filter-label">Service Category:</label>
+              <select id="filterCategory" class="filter-select">
+                <option value="">All 8 Categories</option>
+                <option value="Drain cleaning">Drain cleaning</option>
+                <option value="Sewer line repair">Sewer line repair</option>
+                <option value="Drainage pipe installation">Drainage pipe installation</option>
+                <option value="Waterlogging removal">Waterlogging removal</option>
+                <option value="Stormwater drain maintenance">Stormwater drain maintenance</option>
+                <option value="Drain inspection">Drain inspection</option>
+                <option value="Pumping and water removal">Pumping and water removal</option>
+                <option value="Emergency drainage services">Emergency drainage services</option>
+              </select>
+            </div>
+
+            <!-- Filter: Budget Range -->
+            <div class="filter-group">
+              <label for="filterBudget" class="filter-label">Budget Range (INR):</label>
+              <select id="filterBudget" class="filter-select">
+                <option value="">Any Budget</option>
+                <option value="under2000">Under ₹2,000</option>
+                <option value="2000-4000">₹2,000 – ₹4,000</option>
+                <option value="4000-7000">₹4,000 – ₹7,000</option>
+                <option value="above7000">Above ₹7,000 (Heavy machinery)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="filter-summary-row">
+            <span id="companyCountDisplay" class="count-text">Showing 12 sample providers</span>
+            <span id="activeFilterPills" class="active-pills-wrap"></span>
+          </div>
+        </div>
+
+        <!-- Companies Grid Container -->
+        <div id="companiesGrid" class="companies-grid">
+          <!-- Populated dynamically via JS -->
+        </div>
+
+        <!-- Empty State for Company Search -->
+        <div id="companiesEmptyState" class="empty-state hidden">
+          <div class="empty-state-icon">&#x1F50D;</div>
+          <h3>No Matching Drainage Providers Found</h3>
+          <p>Try clearing your city filter or selecting "All Categories" to view more sample listings.</p>
+          <button type="button" class="btn btn-primary" onclick="window.DrainageApp.resetCompanyFilters()">
+            Clear All Filters
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: REPORT STATUS DASHBOARD (MY REPORTS) -->
+    <section class="section section-dashboard bg-light" id="dashboard-section">
+      <div class="container">
+        <div class="dashboard-header-wrap">
+          <div>
+            <span class="section-tag">Browser Local Storage</span>
+            <h2 class="section-title">My Saved Reports Dashboard</h2>
+            <p class="section-desc">
+              Manage your demo drainage submissions. You can test lifecycle statuses, inspect details, and remove records anytime.
+            </p>
+          </div>
+          <div class="dashboard-top-actions">
+            <a href="#report-section" class="btn btn-primary btn-sm">+ Log New Report</a>
+            <button type="button" id="clearAllReportsBtn" class="btn btn-outline btn-sm text-danger">Clear All</button>
+          </div>
+        </div>
+
+        <!-- Dashboard Filter Controls -->
+        <div class="dashboard-filters-card">
+          <div class="dashboard-filters-row">
+            <!-- Filter by Status -->
+            <div class="dash-filter-col">
+              <label for="dashFilterStatus" class="form-label-sm">Filter Status:</label>
+              <select id="dashFilterStatus" class="form-select-sm">
+                <option value="">All Statuses</option>
+                <option value="Submitted (local demo)">Submitted (local demo)</option>
+                <option value="Under Review (simulated)">Under Review (simulated)</option>
+                <option value="Service Recommended (simulated)">Service Recommended (simulated)</option>
+                <option value="Resolved (simulated)">Resolved (simulated)</option>
+              </select>
+            </div>
+
+            <!-- Filter by Severity -->
+            <div class="dash-filter-col">
+              <label for="dashFilterSeverity" class="form-label-sm">Filter Severity:</label>
+              <select id="dashFilterSeverity" class="form-select-sm">
+                <option value="">All Severities</option>
+                <option value="Emergency">Emergency</option>
+                <option value="High">High</option>
+                <option value="Medium">Medium</option>
+                <option value="Low">Low</option>
+              </select>
+            </div>
+
+            <!-- Filter by Category -->
+            <div class="dash-filter-col">
+              <label for="dashFilterProblem" class="form-label-sm">Problem Type:</label>
+              <select id="dashFilterProblem" class="form-select-sm">
+                <option value="">All Problem Types</option>
+                <option value="Overflowing drainage after rain">Overflowing drainage after rain</option>
+                <option value="Blocked drainage pipe">Blocked drainage pipe</option>
+                <option value="Road waterlogging">Road waterlogging</option>
+                <option value="Sewage water coming outside">Sewage water coming outside</option>
+                <option value="Stagnant water near houses">Stagnant water near houses</option>
+                <option value="Damaged drainage cover">Damaged drainage cover</option>
+                <option value="Damaged underground drainage">Damaged underground drainage</option>
+                <option value="Other drainage problems">Other drainage problems</option>
+              </select>
+            </div>
+
+            <div class="dash-filter-col dash-filter-btn">
+              <button type="button" id="resetDashFiltersBtn" class="btn btn-outline btn-sm">Reset</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Table View on Desktop / Cards on Mobile -->
+        <div class="dashboard-table-container">
+          <table class="dashboard-table" id="reportsTable" aria-label="Submitted drainage reports">
+            <thead>
+              <tr>
+                <th scope="col">Report ID</th>
+                <th scope="col">Problem Category</th>
+                <th scope="col">Location</th>
+                <th scope="col">Date Logged</th>
+                <th scope="col">Severity</th>
+                <th scope="col">Current Status</th>
+                <th scope="col" class="text-right">Actions</th>
+              </tr>
+            </thead>
+            <tbody id="reportsTableBody">
+              <!-- Populated dynamically via JS -->
+            </tbody>
+          </table>
+
+          <!-- Empty State when 0 reports exist -->
+          <div id="reportsEmptyState" class="empty-state hidden">
+            <div class="empty-state-icon">&#x1F4DC;</div>
+            <h3>No Reports Found</h3>
+            <p>You haven't logged any drainage problems matching the current filters.</p>
+            <a href="#report-section" class="btn btn-primary">File a Demonstration Report</a>
+          </div>
+        </div>
+
+        <div class="dashboard-footnote">
+          <svg viewBox="0 0 20 20" fill="currentColor" class="footnote-icon">
+            <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd" />
+          </svg>
+          <span><strong>Demo simulation note:</strong> Changing statuses or modifying records here modifies browser memory only. No municipal authorities, contractors, or emergency workers are notified.</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: PREVENTION AND SAFETY GUIDE -->
+    <section class="section section-safety" id="safety-section">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag section-tag-orange">Civic Knowledge &amp; Hazard Protocols</span>
+          <h2 class="section-title">Drainage Prevention &amp; Monsoon Safety Guide</h2>
+          <p class="section-desc">
+            Essential procedures to keep community drains flowing freely and critical safety rules to protect your family during urban waterlogging.
+          </p>
+        </div>
+
+        <!-- CRITICAL WARNINGS HIGHLIGHT BOX -->
+        <div class="safety-alerts-banner" role="alert">
+          <div class="alert-icon-col">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+              <line x1="12" y1="9" x2="12" y2="13"/>
+              <line x1="12" y1="17" x2="12.01" y2="17"/>
+            </svg>
+          </div>
+          <div class="alert-content-col">
+            <h3 class="alert-banner-title">CRITICAL SAFETY DIRECTIVES — NEVER ATTEMPT HAZARDOUS DIY REPAIRS</h3>
+            <div class="alert-directives-grid">
+              <div class="directive-item">
+                <span class="d-num">1</span>
+                <div>
+                  <strong>Never Enter a Drain, Sewer, or Manhole:</strong>
+                  Confined underground cavities harbor lethal hydrogen sulfide and methane gases and lack oxygen. Manual scavenging and untrained sewer entry are illegal and life-threatening.
+                </div>
+              </div>
+              <div class="directive-item">
+                <span class="d-num">2</span>
+                <div>
+                  <strong>Do Not Touch Submerged Electrical Equipment:</strong>
+                  Stay clear of street poles, feeder pillars, fallen cables, and transformers during standing water. Stray electrical currents in water cause fatal electrocutions.
+                </div>
+              </div>
+              <div class="directive-item">
+                <span class="d-num">3</span>
+                <div>
+                  <strong>Avoid Wading in Unknown Sewage Waters:</strong>
+                  Urban runoff contains rat urine (Leptospirosis / Weil's disease), E. coli, and sharp submerged debris. If contact occurs, wash thoroughly with soap and clean water immediately.
+                </div>
+              </div>
+              <div class="directive-item">
+                <span class="d-num">4</span>
+                <div>
+                  <strong>Keep Children Away from Flooded Channels:</strong>
+                  Fast-moving stormwater in narrow roadside drains possesses tremendous force and can pull children into covered culverts.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- EDUCATIONAL GUIDELINES ACCORDION / GRID -->
+        <div class="guide-grid">
+          <!-- Guide 1 -->
+          <article class="guide-card">
+            <div class="guide-header">
+              <span class="guide-icon">&#x1F6B7;</span>
+              <h3>Preventing Residential Blockages</h3>
+            </div>
+            <div class="guide-body">
+              <p>Over 70% of residential drain blockages result from fats, oils, and solid household refuse:</p>
+              <ul>
+                <li><strong>Cool cooking grease</strong> in a tin container before binning; never pour warm oil down the sink where it hardens into "fatbergs".</li>
+                <li>Fit <strong>stainless steel mesh strainers</strong> over kitchen sinks, bathroom floor traps, and balcony wash areas.</li>
+                <li>Never flush baby wipes, sanitary pads, cotton buds, or hair strands down toilets.</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Guide 2 -->
+          <article class="guide-card">
+            <div class="guide-header">
+              <span class="guide-icon">&#x267B;&#65039;</span>
+              <h3>The Danger of Plastic Waste in Drains</h3>
+            </div>
+            <div class="guide-body">
+              <p>Thin polythene bags and single-use packaging are the single greatest cause of flash floods:</p>
+              <ul>
+                <li>Discarded plastic acts as an impermeable membrane against drain intake grilles, completely sealing them within 15 minutes of rainfall.</li>
+                <li>Plastics disintegrate into toxic microplastics that poison urban groundwater and natural waterbodies.</li>
+                <li>Organize weekly community clean-up drives before monsoon to de-litter local gully channels.</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Guide 3 -->
+          <article class="guide-card">
+            <div class="guide-header">
+              <span class="guide-icon">&#x1F327;&#65039;</span>
+              <h3>Keeping Rainwater Outlets Clear</h3>
+            </div>
+            <div class="guide-body">
+              <p>Proper rooftop and ground rainwater management prevents building basement inundation:</p>
+              <ul>
+                <li>Inspect and unclog roof terrace rainwater downspouts at least two weeks before pre-monsoon showers.</li>
+                <li>Clear dried leaves, twigs, and construction debris from perimeter boundary wall weep holes.</li>
+                <li>Ensure ground slopes steer water toward retention pits or stormwater swales rather than towards basements.</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Guide 4 -->
+          <article class="guide-card">
+            <div class="guide-header">
+              <span class="guide-icon">&#x1F50E;</span>
+              <h3>Identifying Early Drainage Failure</h3>
+            </div>
+            <div class="guide-body">
+              <p>Recognize warning symptoms before full-blown flooding occurs:</p>
+              <ul>
+                <li><strong>Gurgling sounds</strong> in ground-floor toilets when washing machines or kitchen sinks drain.</li>
+                <li><strong>Slow drainage</strong> across multiple plumbing fixtures simultaneously indicating main line obstruction.</li>
+                <li><strong>Soggy patches or sinkholes</strong> in compound soil above underground sewer lines suggesting cracked pipes.</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Guide 5 -->
+          <article class="guide-card">
+            <div class="guide-header">
+              <span class="guide-icon">&#x1F4F8;</span>
+              <h3>How to Document Drainage Issues Safely</h3>
+            </div>
+            <div class="guide-body">
+              <p>Gather accurate evidence for civic ward complaints without risking personal injury:</p>
+              <ul>
+                <li>Photograph from high, dry ground (balcony or first-floor window); never wade into deep waters to get a photo.</li>
+                <li>Include recognizable stationary landmarks (electricity pole number, shop board, house number).</li>
+                <li>Note the exact date and time rainfall stopped versus when pooling began.</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Guide 6 -->
+          <article class="guide-card">
+            <div class="guide-header">
+              <span class="guide-icon">&#x1F3DB;&#65039;</span>
+              <h3>Pre-Monsoon Community Action Plan</h3>
+            </div>
+            <div class="guide-body">
+              <p>How Resident Welfare Associations (RWAs) can prevent neighborhood disasters:</p>
+              <ul>
+                <li>Schedule joint ward walkthroughs with local municipal sanitary inspectors during May-June.</li>
+                <li>Audit and replace cracked storm drain slabs and install safety nets under heavy cast iron grates.</li>
+                <li>Keep emergency dewatering submersible pump sets and fuel ready for basement apartment parking lots.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: CIVIC HELPLINES DIRECTORY -->
+    <section class="section section-helplines bg-light">
+      <div class="container">
+        <div class="helpline-box">
+          <div class="helpline-text">
+            <h3>Official Emergency Contacts Across India</h3>
+            <p>For immediate life-threatening situations, flooding into power grids, or structural collapse, contact official disaster response cells:</p>
+          </div>
+          <div class="helpline-badges">
+            <div class="h-badge">
+              <span class="h-num">112</span>
+              <span class="h-lbl">National Unified Emergency</span>
+            </div>
+            <div class="h-badge">
+              <span class="h-num">1070</span>
+              <span class="h-lbl">State Disaster Management</span>
+            </div>
+            <div class="h-badge">
+              <span class="h-num">1077</span>
+              <span class="h-lbl">District Disaster Relief</span>
+            </div>
+            <div class="h-badge">
+              <span class="h-num">1916</span>
+              <span class="h-lbl">Municipal Flood Helplines (Most Metros)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- SITE FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-col footer-brand-col">
+        <div class="brand-logo footer-logo">
+          <svg class="brand-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="24" cy="24" r="22" fill="#0284C7" />
+            <path d="M12 28H18C20 28 22 30 22 32V38H26V32C26 30 28 28 30 28H36" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+            <rect x="20" y="36" width="8" height="4" rx="2" fill="#BAE6FD"/>
+            <path d="M24 10C24 10 18 18 18 21.5C18 25.0899 20.6863 28 24 28C27.3137 28 30 25.0899 30 21.5C30 18 24 10 24 10Z" fill="#FFFFFF"/>
+          </svg>
+          <span class="brand-title text-white">Drainage<span class="text-aqua">Fix</span></span>
+        </div>
+        <p class="footer-tagline">Find the Right Solution for Every Drainage Problem.</p>
+        <p class="footer-subtext">
+          An open civic-technology prototype designed to streamline waterlogging complaints, connect citizens with drainage maintenance services, and promote monsoon safety across India.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Platform Links</h4>
+        <ul class="footer-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#report-section">Report a Drainage Issue</a></li>
+          <li><a href="#matching-section">Smart Service Matching</a></li>
+          <li><a href="#companies-section">Drainage Company Directory</a></li>
+          <li><a href="#dashboard-section">My Reports Dashboard</a></li>
+          <li><a href="#safety-section">Prevention &amp; Safety Guide</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Service Specialities</h4>
+        <ul class="footer-links">
+          <li><a href="#companies-section">Hydro-Jetting Drain Cleaning</a></li>
+          <li><a href="#companies-section">Sewer CCTV Video Inspection</a></li>
+          <li><a href="#companies-section">High-Capacity Dewatering Pumps</a></li>
+          <li><a href="#companies-section">Stormwater Silt Interceptors</a></li>
+          <li><a href="#companies-section">Cast Iron Manhole Replacement</a></li>
+          <li><a href="#companies-section">Underground Pipe Relining</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Demo Project Details</h4>
+        <p class="footer-note">
+          <strong>Architecture:</strong> Pure HTML5, CSS3 &amp; Vanilla JavaScript with zero external runtime dependencies. Works fully offline in any modern web browser.
+        </p>
+        <div class="footer-legal-badge">
+          <span>Student Civic Tech Demo &bull; 2026</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p class="copyright-text">
+          &copy; 2026 DrainageFix Prototype. Built for educational and civic problem-solving demonstrations.
+        </p>
+        <div class="footer-disclaimer-block">
+          <p>
+            <strong>Disclaimer:</strong> DrainageFix is an independent student prototype. Company listings, ratings, prices, and report status flows are simulated sample data for testing. Submitting a report does not constitute a legal or municipal complaint. All commercial contractors must be verified independently.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== MODALS ==================== -->
+
+  <!-- MODAL: COMPANY DETAILS & VERIFICATION CHECKLIST -->
+  <div class="modal-overlay hidden" id="companyModal" role="dialog" aria-modal="true" aria-labelledby="modalCompanyName">
+    <div class="modal-card">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <span class="modal-pretitle" id="modalCompanySpeciality">Drain Cleaning &amp; Dewatering</span>
+          <h3 id="modalCompanyName" class="modal-title">JalShield Drainage Solutions</h3>
+          <span class="demo-pill">&#x26A0;&#65039; Demo Listing — Verify Before Hiring</span>
+        </div>
+        <button type="button" class="modal-close-btn" id="closeCompanyModalBtn" aria-label="Close dialog">&times;</button>
+      </div>
+
+      <div class="modal-body" id="modalCompanyBody">
+        <!-- Injected via JavaScript -->
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline" id="modalCloseActionBtn">Close Window</button>
+        <button type="button" class="btn btn-primary" id="modalContactActionBtn">Contact Provider (Demo)</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: CONTACT SIMULATION -->
+  <div class="modal-overlay hidden" id="contactModal" role="dialog" aria-modal="true" aria-labelledby="contactModalTitle">
+    <div class="modal-card modal-card-sm">
+      <div class="modal-header">
+        <h3 id="contactModalTitle" class="modal-title">Contact Provider</h3>
+        <button type="button" class="modal-close-btn" id="closeContactModalBtn" aria-label="Close dialog">&times;</button>
+      </div>
+      <div class="modal-body" id="contactModalBody">
+        <!-- Injected via JavaScript -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary btn-block" id="closeContactConfirmBtn">Understood</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: VIEW SAVED REPORT DETAILS -->
+  <div class="modal-overlay hidden" id="reportDetailsModal" role="dialog" aria-modal="true" aria-labelledby="reportModalTitle">
+    <div class="modal-card">
+      <div class="modal-header">
+        <div>
+          <span class="modal-pretitle" id="reportModalTrackingId">Report #DF-2026-0000</span>
+          <h3 id="reportModalTitle" class="modal-title">Drainage Problem Details</h3>
+        </div>
+        <button type="button" class="modal-close-btn" id="closeReportDetailsBtn" aria-label="Close dialog">&times;</button>
+      </div>
+      <div class="modal-body" id="reportModalBody">
+        <!-- Injected via JavaScript -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline" id="closeReportDetailsActionBtn">Close</button>
+        <button type="button" class="btn btn-aqua" id="reportFindMatchingCompanyBtn">Find Matching Companies</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: CONFIRM DELETE -->
+  <div class="modal-overlay hidden" id="deleteConfirmModal" role="dialog" aria-modal="true" aria-labelledby="deleteModalTitle">
+    <div class="modal-card modal-card-sm">
+      <div class="modal-header">
+        <h3 id="deleteModalTitle" class="modal-title text-danger">Confirm Deletion</h3>
+        <button type="button" class="modal-close-btn" id="closeDeleteModalBtn" aria-label="Close dialog">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p id="deleteConfirmMessage">Are you sure you want to permanently delete this report from your browser's localStorage?</p>
+        <p class="text-muted text-sm">This action cannot be undone.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline" id="cancelDeleteBtn">Cancel</button>
+        <button type="button" class="btn btn-danger" id="confirmDeleteActionBtn">Delete Report</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: REPORT SUCCESS -->
+  <div class="modal-overlay hidden" id="reportSuccessModal" role="dialog" aria-modal="true" aria-labelledby="successModalTitle">
+    <div class="modal-card modal-card-sm text-center">
+      <div class="modal-icon-success">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+          <polyline points="22 4 12 14.01 9 11.01"/>
+        </svg>
+      </div>
+      <h3 id="successModalTitle" class="modal-title">Report Saved Successfully!</h3>
+      <div class="success-report-code">
+        Tracking ID: <span id="successTrackingId">DF-2026-XXXX</span>
+      </div>
+      <p class="success-modal-desc">
+        Your issue has been saved to your local browser dashboard. Remember: this is a local simulation and has not been transmitted to civic authorities.
+      </p>
+      <div class="success-actions">
+        <button type="button" class="btn btn-primary btn-block" id="successViewDashboardBtn">
+          View in My Reports Dashboard
+        </button>
+        <button type="button" class="btn btn-aqua btn-block" id="successViewMatchingCompaniesBtn">
+          View Recommended Service Providers
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div id="toastContainer" class="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- JavaScript Application Entry -->
+  <script src="script.js"></script>
+</body>
+</html>
